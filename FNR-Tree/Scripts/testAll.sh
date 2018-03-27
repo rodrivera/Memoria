@@ -22,23 +22,23 @@ do
 	trajectories="$AUX""data/""$city""/trajectories/""$N"".dat"
 	outFNR="$AUX""data/""$city""/output/FNR/""$qFile""-""$N"".txt"
 	outX="$AUX""data/""$city""/output/X/""$qFile""-""$N"".txt"
-#	outC="$AUX""data/""$city""/output/C/""$qFile""-""$N"".txt"
+	outC="$AUX""data/""$city""/output/C/""$qFile""-""$N"".txt"
 	echo "----- Starting tests for ""$N"" objects.. -----"
 	#echo "Executing.. FNR with ""$N"" objects.."
 	./"$AUX"fnrtest.out $network $trajectories $queries $outFNR
 	#echo "Executing..   X with ""$N"" objects.."
 	./"$AUX"xtest.out $network $trajectories $queries $outX
 	#echo "Executing..   C with ""$N"" objects.."
-#	./"$AUX"ctest.out $network $trajectories $queries $outX
+	./"$AUX"ctest.out $network $trajectories $queries $outC
 
 	echo ""; echo "Checking differences between Output files.."
 	if diff $outFNR $outX >/dev/null; then
-#		if diff $outC $outX >/dev/null; then
-#			printf "Passed (C)\n"
-#		else
-#			printf "¡¡ Failed (C) !!\n"
-#			exit
-#		fi
+		if diff $outC $outX >/dev/null; then
+			printf "Passed (C)\n"
+		else
+			printf "¡¡ Failed (C) !!\n"
+			exit
+		fi
 		printf "Passed (FNR and X)\n"
 	else
 		printf "¡¡ Failed (FNR or X) !!\n"

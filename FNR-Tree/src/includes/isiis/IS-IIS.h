@@ -21,6 +21,12 @@ using namespace std;
 struct interval {
 		double l,r;
 		long value;
+
+		interval(double _l, double _r, long _value){
+			l = _l;
+			r = _r;
+			value = _value;
+		}
 };
 
 bool IntervalCompare(const interval& x, const interval& y) {

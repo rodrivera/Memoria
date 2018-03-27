@@ -1,5 +1,5 @@
-#ifndef XTREE_H
-#define XTREE_H
+#ifndef CTREE_H
+#define CTREE_H
 
 //#define DEBUG 1
 
@@ -22,7 +22,7 @@ using namespace std;
     	int cont_OK;
     	int cont_MISS;
 
-class XTree
+class CTree
 {
 public:
 	class SpatialLeaf;
@@ -32,9 +32,9 @@ private:
 	RTree<SpatialLeaf*, int, 2, float> *SpatialLevel;
 
 public:
-	~XTree() {};
+	~CTree() {};
 	
-	XTree()
+	CTree()
 	{
 		SpatialLevel = new RTree<SpatialLeaf*, int, 2, float>;
 	}
@@ -99,15 +99,19 @@ public:
 		}
 		void build()
 		{
+					//cout << " >* BEGIN BUILD!! with " << intervals.size() << " ... ";
 			if(!built)
 			{
-				temporalTree = new Stabbing(intervals,100,10000000);
+				//temporalTree = new Stabbing(intervals,100,10000000);
+				temporalTree = new Stabbing(intervals,100,100000);
 			}
 			built = true;
 			// !!! STATIC only !!! {
 				num_intervals = intervals.size();
 				intervals.clear();
 			// }
+
+					//cout << " >* END BUILD!!" << endl;
 		}
 		size_t size()
 		{
@@ -154,7 +158,6 @@ public:
 	class InsertIntervalArgs
 	{
 	public:
-		long objectId;
 		Line* line;
 		interval* timeInterval;
 		bool orientation;
@@ -191,7 +194,7 @@ public:
 		interval* tmpInterval = args->timeInterval;
 
 		D(string arrow = orientation? "<--" : "-->";)
-		D(cout << "        > Inserting.. id: "<<objectId<<" interval["<<tmpInterval->start<<","<<tmpInterval->stop<<"] "<<arrow<<" into "<<id->nnn<< endl;)
+		D(cout << "        > Inserting.. id: "<<objectId<<" interval["<<tmpInterval->l<<","<<tmpInterval->r<<"] "<<arrow<<" into "<<id->nnn<< endl;)
 
 		//id->getTemporalTree()->Insert(tmpInterval->start,tmpInterval->stop,make_pair(objectId,orientation));
 		id->insertInterval(tmpInterval);
@@ -200,13 +203,13 @@ public:
 		return false;
 	}
 
-	void InsertTripSegment(long objectId, int x1, int y1, int x2, int y2, double entranceTime, double exitTime)
+	void InsertTripSegment(long _objectId, int x1, int y1, int x2, int y2, double entranceTime, double exitTime)
 	{
 		D(cout << "> BEGIN InsertTripSegment." << endl;)
 
 		Line* tmpLine = new Line(min(x1,x2), min(y1,y2), max(x1,x2), max(y1,y2));
 		bool orientation = !(x1<x2);
-		interval *tmpInterval = new interval(entranceTime,exitTime,objectId);
+		interval *tmpInterval = new interval(entranceTime,exitTime,_objectId);
 		InsertIntervalArgs* args = new InsertIntervalArgs(tmpLine, tmpInterval, orientation);
 
 		SpatialLevel->Search(tmpLine->min, tmpLine->max, this->InsertTimeInterval, (void*)args);
@@ -298,10 +301,10 @@ public:
 
     	D(cout << " -> interval = [" << temporalWindow->l << ", " << temporalWindow->r << "]" << endl;)
 
-    	vector<interval> auxRes;
+    	vector<long> auxRes;
 		//id->build();
 
-    	id->getTemporalTree()->findOverlapping(temporalWindow->l,temporalWindow->r,auxRes);
+    	id->getTemporalTree()->query(temporalWindow->l,temporalWindow->r,auxRes);
     	if (auxRes.size() > 0)
     	{
     		Line* sBox = args->sWindow;
@@ -325,7 +328,7 @@ public:
     			{
     				//resultArray->insert(auxRes[i].value.first);
 
-    				if (resultArray->insert(auxRes[i].value.first).second){
+    				if (resultArray->insert(auxRes[i]).second){
     					cont_OK++;
     				} else {
     					cont_MISS++;
@@ -424,4 +427,4 @@ public:
 
 }; 
 
-#endif //XTREE_H
+#endif //CTREE_H
