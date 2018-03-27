@@ -94,18 +94,19 @@ void readQueries(const char *inFilename, const char *outFilename, FNRTree* tree)
 		outfile << endl << endl;
 	}
 
+	cout << "   QueriesInputFile: " << inFilename << endl;
 	cout << "   > Queries time  = " << right << setw(10);
 	cout << duration.count();
 	cout << " microseconds" << endl;
-	outfile.close();
+	outfile.close();;
 }
 
 int main(int argc, char const *argv[])
 {
 
-	if(argc != 6)
+	if(argc < 6)
 	{
-		cout << "Usage: ./fnrtest [nodesFile] [edgesFile] [trajectoriesFile] [queriesFile] [outFile]" << endl;
+		cout << "Usage: ./fnrtest [nodesFile] [edgesFile] [trajectoriesFile] [queriesFile_1] [outFile_1] .. <queriesFile_N> <outFile_N>" << endl;
 		return -1;
 	}
 
@@ -136,7 +137,14 @@ int main(int argc, char const *argv[])
 	cout << " microseconds" << endl;
 
 	readQueries(queriesFile, outFile, &kk);
-	//cout << endl;
+
+	int cont = 6;
+	while (cont <= (argc - 2)){
+		queriesFile 		= argv[cont++];
+		outFile 				= argv[cont++];
+
+		readQueries(queriesFile, outFile, &kk);
+	}
 
 	return 0;
 }

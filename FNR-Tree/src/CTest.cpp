@@ -94,6 +94,8 @@ void readQueries(const char *inFilename, const char *outFilename, CTree* tree){
 		outfile << endl << endl;
 	}
 
+
+	cout << "   QueriesInputFile: " << inFilename << endl;
 	cout << "   > Queries time  = " << right << setw(10);
 	cout << duration.count();
 	cout << " microseconds" << endl;
@@ -103,9 +105,9 @@ void readQueries(const char *inFilename, const char *outFilename, CTree* tree){
 int main(int argc, char const *argv[])
 {
 
-	if(argc != 6)
+	if(argc < 6)
 	{
-		cout << "Usage: ./ctest [nodesFile] [edgesFile] [trajectoriesFile] [queriesFile] [outfile]" << endl;
+		cout << "Usage: ./ctest [nodesFile] [edgesFile] [trajectoriesFile] [queriesFile_1] [outFile_1] .. <queriesFile_N> <outFile_N>" << endl;
 		return -1;
 	}
 
@@ -149,7 +151,14 @@ int main(int argc, char const *argv[])
 */
 
 	readQueries(queriesFile, outFile, &kk);
-	cout << endl;
+
+	int cont = 6;
+	while (cont <= (argc - 2)){
+		queriesFile 		= argv[cont++];
+		outFile 				= argv[cont++];
+
+		readQueries(queriesFile, outFile, &kk);
+	}
 
 	return 0;
 }

@@ -94,6 +94,7 @@ void readQueries(const char *inFilename, const char *outFilename, XTree* tree){
 		outfile << endl << endl;
 	}
 
+	cout << "   QueriesInputFile: " << inFilename << endl;
 	cout << "   > Queries time  = " << right << setw(10);
 	cout << duration.count();
 	cout << " microseconds" << endl;
@@ -103,17 +104,17 @@ void readQueries(const char *inFilename, const char *outFilename, XTree* tree){
 int main(int argc, char const *argv[])
 {
 
-	if(argc != 6)
+	if(argc < 6)
 	{
-		cout << "Usage: ./xtest [nodesFile] [edgesFile] [trajectoriesFile] [queriesFile] [outfile]" << endl;
+		cout << "Usage: ./xtest [nodesFile] [edgesFile] [trajectoriesFile] [queriesFile_1] [outFile_1] .. <queriesFile_N> <outFile_N>" << endl;
 		return -1;
 	}
 
 	const char* nodesFile 			= argv[1];
 	const char* edgesFile 			= argv[2];
-	const char* trajectoriesFile 	= argv[3];
+	const char* trajectoriesFile	= argv[3];
 	const char* queriesFile 		= argv[4];
-	const char* outFile 			= argv[5];
+	const char* outFile 				= argv[5];
 
 	XTree kk = XTree();
 
@@ -149,7 +150,14 @@ int main(int argc, char const *argv[])
 */
 
 	readQueries(queriesFile, outFile, &kk);
-	cout << endl;
+
+	int cont = 6;
+	while (cont <= (argc - 2)){
+		queriesFile 		= argv[cont++];
+		outFile 				= argv[cont++];
+
+		readQueries(queriesFile, outFile, &kk);
+	}
 
 	return 0;
 }
