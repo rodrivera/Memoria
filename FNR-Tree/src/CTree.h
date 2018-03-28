@@ -102,7 +102,7 @@ public:
 					//cout << " >* BEGIN BUILD!! with " << intervals.size() << " ... ";
 			if(!built)
 			{
-				//temporalTree = new Stabbing(intervals,100,10000000);
+				//temporalTree = new Stabbing(intervals,100,10000000); // 10^7
 				temporalTree = new Stabbing(intervals,100,100000);
 			}
 			built = true;

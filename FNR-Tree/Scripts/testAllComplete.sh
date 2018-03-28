@@ -24,7 +24,7 @@ do
 	runX="./""$AUX""xtest.out"" ""$network"" ""$trajectories"
 	runC="./""$AUX""ctest.out"" ""$network"" ""$trajectories"
 
-	declare -a QTYPES=("1_1_1" "10_10_10" "20_20_20")
+	declare -a QTYPES=("1_1_1" "10_10_10" "20_20_20" "1_1_10" "1_1_100" "10_10_100" "1_1_0" "10_10_0" "100_100_0")
 	for QT in "${QTYPES[@]}"
 	do
 		queries="$AUX""data/""$city""/queries/""$QT"".txt"
@@ -37,10 +37,10 @@ do
 		runC="$runC"" ""$queries"" ""$outC"
 	done
 
-	eval $runFNR
+	eval "time ""$runFNR"
 	echo ""
-	eval $runX
+	eval "time ""$runX"
 	echo ""
-	eval $runC
+	eval "time ""$runC"
 	echo ""
 done

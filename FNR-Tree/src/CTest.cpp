@@ -94,9 +94,7 @@ void readQueries(const char *inFilename, const char *outFilename, CTree* tree){
 		outfile << endl << endl;
 	}
 
-
-	cout << "   QueriesInputFile: " << inFilename << endl;
-	cout << "   > Queries time  = " << right << setw(10);
+	cout << "   > " << left << setw(36) << inFilename << ": " << right << setw(10);
 	cout << duration.count();
 	cout << " microseconds" << endl;
 	outfile.close();
@@ -150,6 +148,7 @@ int main(int argc, char const *argv[])
 	}
 */
 
+	cout << endl << "   > Queries time: " << endl;
 	readQueries(queriesFile, outFile, &kk);
 
 	int cont = 6;

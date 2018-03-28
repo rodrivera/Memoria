@@ -94,11 +94,10 @@ void readQueries(const char *inFilename, const char *outFilename, FNRTree* tree)
 		outfile << endl << endl;
 	}
 
-	cout << "   QueriesInputFile: " << inFilename << endl;
-	cout << "   > Queries time  = " << right << setw(10);
+	cout << "   > " << left << setw(36) << inFilename << ": " << right << setw(10);
 	cout << duration.count();
 	cout << " microseconds" << endl;
-	outfile.close();;
+	outfile.close();
 }
 
 int main(int argc, char const *argv[])
@@ -136,6 +135,8 @@ int main(int argc, char const *argv[])
 	cout << chrono::duration_cast<chrono::microseconds>( end - start2 ).count();
 	cout << " microseconds" << endl;
 
+
+	cout << endl << "   > Queries time: " << endl;
 	readQueries(queriesFile, outFile, &kk);
 
 	int cont = 6;
