@@ -1,0 +1,215 @@
+----- Starting tests for 1000 objects.. -----
+> FNR-Tree indicators:
+   > MEMORY USAGE  =   53416704 Bytes
+   > Building time =    3921261 microseconds
+
+   > Queries time: 
+   > data/San_Francisco/queries/1_1_1.txt:       2467 microseconds
+   > data/San_Francisco/queries/10_10_10.txt:     336598 microseconds
+   > data/San_Francisco/queries/20_20_20.txt:    3476993 microseconds
+   > data/San_Francisco/queries/1_1_10.txt:       4552 microseconds
+   > data/San_Francisco/queries/1_1_100.txt:       4104 microseconds
+   > data/San_Francisco/queries/10_10_100.txt:    2337523 microseconds
+   > data/San_Francisco/queries/1_1_0.txt:       3003 microseconds
+   > data/San_Francisco/queries/10_10_0.txt:     186918 microseconds
+   > data/San_Francisco/queries/100_100_0.txt:   16561885 microseconds
+
+>   X-Tree indicators:
+   > MEMORY USAGE  =   59548536 Bytes
+   > Building time =    3157301 microseconds
+
+   > Queries time: 
+   > data/San_Francisco/queries/1_1_1.txt:       3623 microseconds
+   > data/San_Francisco/queries/10_10_10.txt:     379138 microseconds
+   > data/San_Francisco/queries/20_20_20.txt:    3427010 microseconds
+   > data/San_Francisco/queries/1_1_10.txt:       5473 microseconds
+   > data/San_Francisco/queries/1_1_100.txt:       5066 microseconds
+   > data/San_Francisco/queries/10_10_100.txt:    2212954 microseconds
+   > data/San_Francisco/queries/1_1_0.txt:       3223 microseconds
+   > data/San_Francisco/queries/10_10_0.txt:     246602 microseconds
+   > data/San_Francisco/queries/100_100_0.txt:   22592295 microseconds
+
+>   C-Tree indicators:
+   > MEMORY USAGE  =   81573472 Bytes
+   > Building time = 24282697176 microseconds
+
+   > Queries time: 
+   > data/San_Francisco/queries/1_1_1.txt:       2201 microseconds
+   > data/San_Francisco/queries/10_10_10.txt:     228910 microseconds
+   > data/San_Francisco/queries/20_20_20.txt:    1575509 microseconds
+   > data/San_Francisco/queries/1_1_10.txt:       3559 microseconds
+   > data/San_Francisco/queries/1_1_100.txt:       3225 microseconds
+   > data/San_Francisco/queries/10_10_100.txt:     576622 microseconds
+   > data/San_Francisco/queries/1_1_0.txt:       2525 microseconds
+   > data/San_Francisco/queries/10_10_0.txt:     211885 microseconds
+   > data/San_Francisco/queries/100_100_0.txt:   19714842 microseconds
+
+----- Starting tests for 2000 objects.. -----
+> FNR-Tree indicators:
+   > MEMORY USAGE  =   84678944 Bytes
+   > Building time =    8333877 microseconds
+
+   > Queries time: 
+   > data/San_Francisco/queries/1_1_1.txt:       2887 microseconds
+   > data/San_Francisco/queries/10_10_10.txt:     570094 microseconds
+   > data/San_Francisco/queries/20_20_20.txt:    5660155 microseconds
+   > data/San_Francisco/queries/1_1_10.txt:       7736 microseconds
+   > data/San_Francisco/queries/1_1_100.txt:       6866 microseconds
+   > data/San_Francisco/queries/10_10_100.txt:    4711551 microseconds
+   > data/San_Francisco/queries/1_1_0.txt:       2581 microseconds
+   > data/San_Francisco/queries/10_10_0.txt:     202531 microseconds
+   > data/San_Francisco/queries/100_100_0.txt:   18879673 microseconds
+
+>   X-Tree indicators:
+   > MEMORY USAGE  =   84558328 Bytes
+   > Building time =    6487609 microseconds
+
+   > Queries time: 
+   > data/San_Francisco/queries/1_1_1.txt:       3855 microseconds
+   > data/San_Francisco/queries/10_10_10.txt:     574747 microseconds
+   > data/San_Francisco/queries/20_20_20.txt:    5805157 microseconds
+   > data/San_Francisco/queries/1_1_10.txt:       8133 microseconds
+   > data/San_Francisco/queries/1_1_100.txt:       7292 microseconds
+   > data/San_Francisco/queries/10_10_100.txt:    4299469 microseconds
+   > data/San_Francisco/queries/1_1_0.txt:       3638 microseconds
+   > data/San_Francisco/queries/10_10_0.txt:     283485 microseconds
+   > data/San_Francisco/queries/100_100_0.txt:   25964503 microseconds
+
+>   C-Tree indicators:
+   > MEMORY USAGE  =   95261224 Bytes
+   > Building time = 33433496074 microseconds
+
+   > Queries time: 
+   > data/San_Francisco/queries/1_1_1.txt:       2784 microseconds
+   > data/San_Francisco/queries/10_10_10.txt:     317207 microseconds
+   > data/San_Francisco/queries/20_20_20.txt:    2405551 microseconds
+   > data/San_Francisco/queries/1_1_10.txt:       4766 microseconds
+   > data/San_Francisco/queries/1_1_100.txt:       4320 microseconds
+   > data/San_Francisco/queries/10_10_100.txt:     904377 microseconds
+   > data/San_Francisco/queries/1_1_0.txt:       2871 microseconds
+   > data/San_Francisco/queries/10_10_0.txt:     274686 microseconds
+   > data/San_Francisco/queries/100_100_0.txt:   25803465 microseconds
+
+----- Starting tests for 3000 objects.. -----
+> FNR-Tree indicators:
+   > MEMORY USAGE  =  116692464 Bytes
+   > Building time =   13024307 microseconds
+
+   > Queries time: 
+   > data/San_Francisco/queries/1_1_1.txt:       3255 microseconds
+   > data/San_Francisco/queries/10_10_10.txt:     805683 microseconds
+   > data/San_Francisco/queries/20_20_20.txt:    8278980 microseconds
+   > data/San_Francisco/queries/1_1_10.txt:       8903 microseconds
+   > data/San_Francisco/queries/1_1_100.txt:       8262 microseconds
+   > data/San_Francisco/queries/10_10_100.txt:    7323355 microseconds
+   > data/San_Francisco/queries/1_1_0.txt:       2536 microseconds
+   > data/San_Francisco/queries/10_10_0.txt:     224301 microseconds
+   > data/San_Francisco/queries/100_100_0.txt:   20749824 microseconds
+
+>   X-Tree indicators:
+   > MEMORY USAGE  =  110169144 Bytes
+   > Building time =    9737561 microseconds
+
+   > Queries time: 
+   > data/San_Francisco/queries/1_1_1.txt:       4278 microseconds
+   > data/San_Francisco/queries/10_10_10.txt:     770755 microseconds
+   > data/San_Francisco/queries/20_20_20.txt:    8335294 microseconds
+   > data/San_Francisco/queries/1_1_10.txt:       9889 microseconds
+   > data/San_Francisco/queries/1_1_100.txt:       9122 microseconds
+   > data/San_Francisco/queries/10_10_100.txt:    6537687 microseconds
+   > data/San_Francisco/queries/1_1_0.txt:       4153 microseconds
+   > data/San_Francisco/queries/10_10_0.txt:     314440 microseconds
+   > data/San_Francisco/queries/100_100_0.txt:   28469514 microseconds
+
+>   C-Tree indicators:
+   > MEMORY USAGE  =  108941272 Bytes
+   > Building time = 39229152056 microseconds
+
+   > Queries time: 
+   > data/San_Francisco/queries/1_1_1.txt:       3254 microseconds
+   > data/San_Francisco/queries/10_10_10.txt:     392291 microseconds
+   > data/San_Francisco/queries/20_20_20.txt:    3169583 microseconds
+   > data/San_Francisco/queries/1_1_10.txt:       5468 microseconds
+   > data/San_Francisco/queries/1_1_100.txt:       5162 microseconds
+   > data/San_Francisco/queries/10_10_100.txt:    1331753 microseconds
+   > data/San_Francisco/queries/1_1_0.txt:       3307 microseconds
+   > data/San_Francisco/queries/10_10_0.txt:     325003 microseconds
+   > data/San_Francisco/queries/100_100_0.txt:   30106132 microseconds
+
+----- Starting tests for 4000 objects.. -----
+> FNR-Tree indicators:
+   > MEMORY USAGE  =  148810184 Bytes
+   > Building time =   17860658 microseconds
+
+   > Queries time: 
+   > data/San_Francisco/queries/1_1_1.txt:       3651 microseconds
+   > data/San_Francisco/queries/10_10_10.txt:    1008779 microseconds
+   > data/San_Francisco/queries/20_20_20.txt:   11117653 microseconds
+   > data/San_Francisco/queries/1_1_10.txt:      12101 microseconds
+   > data/San_Francisco/queries/1_1_100.txt:      10567 microseconds
+   > data/San_Francisco/queries/10_10_100.txt:   10071788 microseconds
+   > data/San_Francisco/queries/1_1_0.txt:       2884 microseconds
+   > data/San_Francisco/queries/10_10_0.txt:     248929 microseconds
+   > data/San_Francisco/queries/100_100_0.txt:   23213286 microseconds
+
+>   X-Tree indicators:
+   > MEMORY USAGE  =  135863320 Bytes
+   > Building time =   13181687 microseconds
+
+   > Queries time: 
+   > data/San_Francisco/queries/1_1_1.txt:       4761 microseconds
+   > data/San_Francisco/queries/10_10_10.txt:     977569 microseconds
+   > data/San_Francisco/queries/20_20_20.txt:   10957396 microseconds
+   > data/San_Francisco/queries/1_1_10.txt:      12802 microseconds
+   > data/San_Francisco/queries/1_1_100.txt:      11396 microseconds
+   > data/San_Francisco/queries/10_10_100.txt:    8862896 microseconds
+   > data/San_Francisco/queries/1_1_0.txt:       4262 microseconds
+   > data/San_Francisco/queries/10_10_0.txt:     341323 microseconds
+   > data/San_Francisco/queries/100_100_0.txt:   31320805 microseconds
+
+>   C-Tree indicators:
+   > MEMORY USAGE  =  122120584 Bytes
+   > Building time = 53185432811 microseconds
+
+   > Queries time: 
+   > data/San_Francisco/queries/1_1_1.txt:       3779 microseconds
+   > data/San_Francisco/queries/10_10_10.txt:     476516 microseconds
+   > data/San_Francisco/queries/20_20_20.txt:    3970094 microseconds
+   > data/San_Francisco/queries/1_1_10.txt:       6541 microseconds
+   > data/San_Francisco/queries/1_1_100.txt:       6103 microseconds
+   > data/San_Francisco/queries/10_10_100.txt:    1852762 microseconds
+   > data/San_Francisco/queries/1_1_0.txt:       3752 microseconds
+   > data/San_Francisco/queries/10_10_0.txt:     374214 microseconds
+   > data/San_Francisco/queries/100_100_0.txt:   34554762 microseconds
+
+----- Starting tests for 5000 objects.. -----
+> FNR-Tree indicators:
+   > MEMORY USAGE  =  180906464 Bytes
+   > Building time =   22816174 microseconds
+
+   > Queries time: 
+   > data/San_Francisco/queries/1_1_1.txt:       3876 microseconds
+   > data/San_Francisco/queries/10_10_10.txt:    1165533 microseconds
+   > data/San_Francisco/queries/20_20_20.txt:   13962125 microseconds
+   > data/San_Francisco/queries/1_1_10.txt:      14563 microseconds
+   > data/San_Francisco/queries/1_1_100.txt:      12832 microseconds
+   > data/San_Francisco/queries/10_10_100.txt:   12821155 microseconds
+   > data/San_Francisco/queries/1_1_0.txt:       2942 microseconds
+   > data/San_Francisco/queries/10_10_0.txt:     268601 microseconds
+   > data/San_Francisco/queries/100_100_0.txt:   25160530 microseconds
+
+>   X-Tree indicators:
+   > MEMORY USAGE  =  161540344 Bytes
+   > Building time =   16644201 microseconds
+
+   > Queries time: 
+   > data/San_Francisco/queries/1_1_1.txt:       5224 microseconds
+   > data/San_Francisco/queries/10_10_10.txt:    1182808 microseconds
+   > data/San_Francisco/queries/20_20_20.txt:   13547685 microseconds
+   > data/San_Francisco/queries/1_1_10.txt:      15062 microseconds
+   > data/San_Francisco/queries/1_1_100.txt:      13546 microseconds
+   > data/San_Francisco/queries/10_10_100.txt:   11180675 microseconds
+   > data/San_Francisco/queries/1_1_0.txt:       4602 microseconds
+   > data/San_Francisco/queries/10_10_0.txt:     367429 microseconds
+   > data/San_Francisco/queries/100_100_0.txt:   33827431 microseconds
+

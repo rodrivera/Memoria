@@ -103,7 +103,7 @@ public:
 			if(!built)
 			{
 				//temporalTree = new Stabbing(intervals,100,10000000); // 10^7
-				temporalTree = new Stabbing(intervals,100,100000);
+				temporalTree = new Stabbing(intervals,100,10000000);
 			}
 			built = true;
 			// !!! STATIC only !!! {
@@ -117,7 +117,7 @@ public:
 		{
 			size_t totalSize = sizeof(SpatialLeaf) + sizeof(Line) + sizeof(Stabbing);
 
-			totalSize += num_intervals*sizeof(intervals[0]);
+			totalSize += temporalTree->size();
 
 			return totalSize;
 		}
