@@ -1,0 +1,230 @@
+----- Starting tests for 1000 objects.. -----
+> FNR-Tree indicators:
+   > MEMORY USAGE  =    5707968 Bytes
+   > Building time =     552620 microseconds
+
+   > Queries time: 
+   > data/Oldenburg/queries/1_1_1.txt    :         38 microseconds
+   > data/Oldenburg/queries/10_10_10.txt :        294 microseconds
+   > data/Oldenburg/queries/20_20_20.txt :       1200 microseconds
+   > data/Oldenburg/queries/1_1_10.txt   :         26 microseconds
+   > data/Oldenburg/queries/1_1_100.txt  :        138 microseconds
+   > data/Oldenburg/queries/10_10_100.txt:       2019 microseconds
+   > data/Oldenburg/queries/1_1_0.txt    :         22 microseconds
+   > data/Oldenburg/queries/10_10_0.txt  :        169 microseconds
+   > data/Oldenburg/queries/100_100_0.txt:       5252 microseconds
+
+>   X-Tree indicators:
+   > MEMORY USAGE  =    5095408 Bytes
+   > Building time =     435901 microseconds
+
+   > Queries time: 
+   > data/Oldenburg/queries/1_1_1.txt    :         52 microseconds
+   > data/Oldenburg/queries/10_10_10.txt :        507 microseconds
+   > data/Oldenburg/queries/20_20_20.txt :       2010 microseconds
+   > data/Oldenburg/queries/1_1_10.txt   :         98 microseconds
+   > data/Oldenburg/queries/1_1_100.txt  :        235 microseconds
+   > data/Oldenburg/queries/10_10_100.txt:       2732 microseconds
+   > data/Oldenburg/queries/1_1_0.txt    :         46 microseconds
+   > data/Oldenburg/queries/10_10_0.txt  :        308 microseconds
+   > data/Oldenburg/queries/100_100_0.txt:      14226 microseconds
+
+>   C-Tree indicators:
+   > MEMORY USAGE  =    7293468 Bytes
+   > Building time = 2616987492 microseconds
+
+   > Queries time: 
+   > data/Oldenburg/queries/1_1_1.txt    :         24 microseconds
+   > data/Oldenburg/queries/10_10_10.txt :        197 microseconds
+   > data/Oldenburg/queries/20_20_20.txt :        619 microseconds
+   > data/Oldenburg/queries/1_1_10.txt   :         10 microseconds
+   > data/Oldenburg/queries/1_1_100.txt  :         38 microseconds
+   > data/Oldenburg/queries/10_10_100.txt:        608 microseconds
+   > data/Oldenburg/queries/1_1_0.txt    :          6 microseconds
+   > data/Oldenburg/queries/10_10_0.txt  :        112 microseconds
+   > data/Oldenburg/queries/100_100_0.txt:       7051 microseconds
+
+----- Starting tests for 2000 objects.. -----
+> FNR-Tree indicators:
+   > MEMORY USAGE  =   10796408 Bytes
+   > Building time =    1157470 microseconds
+
+   > Queries time: 
+   > data/Oldenburg/queries/1_1_1.txt    :         43 microseconds
+   > data/Oldenburg/queries/10_10_10.txt :        486 microseconds
+   > data/Oldenburg/queries/20_20_20.txt :       2019 microseconds
+   > data/Oldenburg/queries/1_1_10.txt   :         45 microseconds
+   > data/Oldenburg/queries/1_1_100.txt  :        270 microseconds
+   > data/Oldenburg/queries/10_10_100.txt:       3861 microseconds
+   > data/Oldenburg/queries/1_1_0.txt    :         34 microseconds
+   > data/Oldenburg/queries/10_10_0.txt  :        178 microseconds
+   > data/Oldenburg/queries/100_100_0.txt:       7537 microseconds
+
+>   X-Tree indicators:
+   > MEMORY USAGE  =    9166160 Bytes
+   > Building time =     874274 microseconds
+
+   > Queries time: 
+   > data/Oldenburg/queries/1_1_1.txt    :        108 microseconds
+   > data/Oldenburg/queries/10_10_10.txt :        875 microseconds
+   > data/Oldenburg/queries/20_20_20.txt :       3361 microseconds
+   > data/Oldenburg/queries/1_1_10.txt   :        157 microseconds
+   > data/Oldenburg/queries/1_1_100.txt  :        461 microseconds
+   > data/Oldenburg/queries/10_10_100.txt:       5292 microseconds
+   > data/Oldenburg/queries/1_1_0.txt    :         69 microseconds
+   > data/Oldenburg/queries/10_10_0.txt  :        445 microseconds
+   > data/Oldenburg/queries/100_100_0.txt:      19436 microseconds
+
+>   C-Tree indicators:
+   > MEMORY USAGE  =    9052196 Bytes
+   > Building time = 3236709387 microseconds
+
+   > Queries time: 
+   > data/Oldenburg/queries/1_1_1.txt    :         43 microseconds
+   > data/Oldenburg/queries/10_10_10.txt :        305 microseconds
+   > data/Oldenburg/queries/20_20_20.txt :       1045 microseconds
+   > data/Oldenburg/queries/1_1_10.txt   :         36 microseconds
+   > data/Oldenburg/queries/1_1_100.txt  :         98 microseconds
+   > data/Oldenburg/queries/10_10_100.txt:       1122 microseconds
+   > data/Oldenburg/queries/1_1_0.txt    :         16 microseconds
+   > data/Oldenburg/queries/10_10_0.txt  :        161 microseconds
+   > data/Oldenburg/queries/100_100_0.txt:       9455 microseconds
+
+----- Starting tests for 3000 objects.. -----
+> FNR-Tree indicators:
+   > MEMORY USAGE  =   15703088 Bytes
+   > Building time =    1785035 microseconds
+
+   > Queries time: 
+   > data/Oldenburg/queries/1_1_1.txt    :         45 microseconds
+   > data/Oldenburg/queries/10_10_10.txt :        659 microseconds
+   > data/Oldenburg/queries/20_20_20.txt :       2698 microseconds
+   > data/Oldenburg/queries/1_1_10.txt   :         54 microseconds
+   > data/Oldenburg/queries/1_1_100.txt  :        333 microseconds
+   > data/Oldenburg/queries/10_10_100.txt:       5459 microseconds
+   > data/Oldenburg/queries/1_1_0.txt    :         27 microseconds
+   > data/Oldenburg/queries/10_10_0.txt  :        211 microseconds
+   > data/Oldenburg/queries/100_100_0.txt:       8924 microseconds
+
+>   X-Tree indicators:
+   > MEMORY USAGE  =   13091504 Bytes
+   > Building time =    1326663 microseconds
+
+   > Queries time: 
+   > data/Oldenburg/queries/1_1_1.txt    :        107 microseconds
+   > data/Oldenburg/queries/10_10_10.txt :       1064 microseconds
+   > data/Oldenburg/queries/20_20_20.txt :       4614 microseconds
+   > data/Oldenburg/queries/1_1_10.txt   :        122 microseconds
+   > data/Oldenburg/queries/1_1_100.txt  :        518 microseconds
+   > data/Oldenburg/queries/10_10_100.txt:       6925 microseconds
+   > data/Oldenburg/queries/1_1_0.txt    :         89 microseconds
+   > data/Oldenburg/queries/10_10_0.txt  :        521 microseconds
+   > data/Oldenburg/queries/100_100_0.txt:      22843 microseconds
+
+>   C-Tree indicators:
+   > MEMORY USAGE  =   10475396 Bytes
+   > Building time = 3719426424 microseconds
+
+   > Queries time: 
+   > data/Oldenburg/queries/1_1_1.txt    :         62 microseconds
+   > data/Oldenburg/queries/10_10_10.txt :        378 microseconds
+   > data/Oldenburg/queries/20_20_20.txt :       1337 microseconds
+   > data/Oldenburg/queries/1_1_10.txt   :         46 microseconds
+   > data/Oldenburg/queries/1_1_100.txt  :        117 microseconds
+   > data/Oldenburg/queries/10_10_100.txt:       1643 microseconds
+   > data/Oldenburg/queries/1_1_0.txt    :         21 microseconds
+   > data/Oldenburg/queries/10_10_0.txt  :        246 microseconds
+   > data/Oldenburg/queries/100_100_0.txt:      11850 microseconds
+
+----- Starting tests for 4000 objects.. -----
+> FNR-Tree indicators:
+   > MEMORY USAGE  =   20320728 Bytes
+   > Building time =    2709539 microseconds
+
+   > Queries time: 
+   > data/Oldenburg/queries/1_1_1.txt    :        101 microseconds
+   > data/Oldenburg/queries/10_10_10.txt :       1221 microseconds
+   > data/Oldenburg/queries/20_20_20.txt :       5348 microseconds
+   > data/Oldenburg/queries/1_1_10.txt   :        141 microseconds
+   > data/Oldenburg/queries/1_1_100.txt  :        652 microseconds
+   > data/Oldenburg/queries/10_10_100.txt:      10184 microseconds
+   > data/Oldenburg/queries/1_1_0.txt    :         54 microseconds
+   > data/Oldenburg/queries/10_10_0.txt  :        400 microseconds
+   > data/Oldenburg/queries/100_100_0.txt:      14478 microseconds
+
+>   X-Tree indicators:
+   > MEMORY USAGE  =   16785616 Bytes
+   > Building time =    1899474 microseconds
+
+   > Queries time: 
+   > data/Oldenburg/queries/1_1_1.txt    :        145 microseconds
+   > data/Oldenburg/queries/10_10_10.txt :       1492 microseconds
+   > data/Oldenburg/queries/20_20_20.txt :       6226 microseconds
+   > data/Oldenburg/queries/1_1_10.txt   :        164 microseconds
+   > data/Oldenburg/queries/1_1_100.txt  :        742 microseconds
+   > data/Oldenburg/queries/10_10_100.txt:      10004 microseconds
+   > data/Oldenburg/queries/1_1_0.txt    :        107 microseconds
+   > data/Oldenburg/queries/10_10_0.txt  :        699 microseconds
+   > data/Oldenburg/queries/100_100_0.txt:      31315 microseconds
+
+>   C-Tree indicators:
+   > MEMORY USAGE  =   11748544 Bytes
+   > Building time = 4078354954 microseconds
+
+   > Queries time: 
+   > data/Oldenburg/queries/1_1_1.txt    :         54 microseconds
+   > data/Oldenburg/queries/10_10_10.txt :        452 microseconds
+   > data/Oldenburg/queries/20_20_20.txt :       1634 microseconds
+   > data/Oldenburg/queries/1_1_10.txt   :         41 microseconds
+   > data/Oldenburg/queries/1_1_100.txt  :        141 microseconds
+   > data/Oldenburg/queries/10_10_100.txt:       1863 microseconds
+   > data/Oldenburg/queries/1_1_0.txt    :         19 microseconds
+   > data/Oldenburg/queries/10_10_0.txt  :        249 microseconds
+   > data/Oldenburg/queries/100_100_0.txt:      14418 microseconds
+
+----- Starting tests for 5000 objects.. -----
+> FNR-Tree indicators:
+   > MEMORY USAGE  =   24443648 Bytes
+   > Building time =    2980772 microseconds
+
+   > Queries time: 
+   > data/Oldenburg/queries/1_1_1.txt    :         76 microseconds
+   > data/Oldenburg/queries/10_10_10.txt :       1177 microseconds
+   > data/Oldenburg/queries/20_20_20.txt :       5156 microseconds
+   > data/Oldenburg/queries/1_1_10.txt   :        128 microseconds
+   > data/Oldenburg/queries/1_1_100.txt  :        651 microseconds
+   > data/Oldenburg/queries/10_10_100.txt:      10619 microseconds
+   > data/Oldenburg/queries/1_1_0.txt    :         31 microseconds
+   > data/Oldenburg/queries/10_10_0.txt  :        351 microseconds
+   > data/Oldenburg/queries/100_100_0.txt:      14888 microseconds
+
+>   X-Tree indicators:
+   > MEMORY USAGE  =   20083952 Bytes
+   > Building time =    2124804 microseconds
+
+   > Queries time: 
+   > data/Oldenburg/queries/1_1_1.txt    :        165 microseconds
+   > data/Oldenburg/queries/10_10_10.txt :       1676 microseconds
+   > data/Oldenburg/queries/20_20_20.txt :       7727 microseconds
+   > data/Oldenburg/queries/1_1_10.txt   :        211 microseconds
+   > data/Oldenburg/queries/1_1_100.txt  :        848 microseconds
+   > data/Oldenburg/queries/10_10_100.txt:      12249 microseconds
+   > data/Oldenburg/queries/1_1_0.txt    :        109 microseconds
+   > data/Oldenburg/queries/10_10_0.txt  :        820 microseconds
+   > data/Oldenburg/queries/100_100_0.txt:      36433 microseconds
+
+>   C-Tree indicators:
+   > MEMORY USAGE  =   12822312 Bytes
+   > Building time = 4325685780 microseconds
+
+   > Queries time: 
+   > data/Oldenburg/queries/1_1_1.txt    :         72 microseconds
+   > data/Oldenburg/queries/10_10_10.txt :        550 microseconds
+   > data/Oldenburg/queries/20_20_20.txt :       2041 microseconds
+   > data/Oldenburg/queries/1_1_10.txt   :         59 microseconds
+   > data/Oldenburg/queries/1_1_100.txt  :        174 microseconds
+   > data/Oldenburg/queries/10_10_100.txt:       2417 microseconds
+   > data/Oldenburg/queries/1_1_0.txt    :         30 microseconds
+   > data/Oldenburg/queries/10_10_0.txt  :        298 microseconds
+   > data/Oldenburg/queries/100_100_0.txt:      16267 microseconds
+
