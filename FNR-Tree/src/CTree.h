@@ -103,21 +103,22 @@ public:
 			if(!built)
 			{
 				//temporalTree = new Stabbing(intervals,100,10000000); // 10^7
-				temporalTree = new Stabbing(intervals,100,10000000);
+				temporalTree = new Stabbing(intervals,100,100000);
 			}
 			built = true;
-			// !!! STATIC only !!! {
-				num_intervals = intervals.size();
-				intervals.clear();
-			// }
-
+			num_intervals = intervals.size();
+			intervals.clear();
+				
 					//cout << " >* END BUILD!!" << endl;
 		}
 		size_t size()
 		{
-			size_t totalSize = sizeof(SpatialLeaf) + sizeof(Line) + sizeof(Stabbing);
+			size_t totalSize = sizeof(SpatialLeaf) + sizeof(Line);
 
-			totalSize += temporalTree->size();
+			if (temporalTree->size() >= 5) 
+			{
+				totalSize += temporalTree->memory_usage();
+			}
 
 			return totalSize;
 		}
@@ -127,7 +128,7 @@ public:
 		}
 		size_t T_size()
 		{
-			return sizeof(Stabbing) + num_intervals*sizeof(intervals[0]);
+			return sizeof(Stabbing) + temporalTree->memory_usage();
 		}
 		size_t leaf_stats()
 		{

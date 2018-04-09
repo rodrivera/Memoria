@@ -111,9 +111,13 @@ public:
 		}
 		size_t size()
 		{
-			size_t totalSize = sizeof(SpatialLeaf) + sizeof(Line) + sizeof(IntervalTree<pair<long, bool>, double >);
+			size_t totalSize = sizeof(SpatialLeaf) + sizeof(Line);
 
-			totalSize += num_intervals*sizeof(intervals[0]);
+			if (num_intervals >= 5)
+			{
+				totalSize += sizeof(IntervalTree<pair<long, bool>, double >);
+				totalSize += num_intervals*sizeof(intervals[0]);
+			}
 
 			return totalSize;
 		}

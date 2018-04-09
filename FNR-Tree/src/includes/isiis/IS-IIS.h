@@ -42,6 +42,7 @@ private:
 	long discr_multiplier;
   long domain_size;
   long independent_sets_number;
+  long num_intervals;
 
 	vector<sd_vector<>*> sdv_start;
 	vector<sd_vector<>*> sdv_stop;
@@ -58,7 +59,7 @@ public:
 
 		Dc("Construct BEGIN:");
 
-		long num_intervals = intervals.size();
+		num_intervals = intervals.size();
 		domain_size = domainSize;
 		discr_multiplier = discrMultiplier;
 
@@ -219,7 +220,7 @@ public:
 	  Dq("~~~" << endl);
 
 	}
-	size_t size() {
+	size_t memory_usage() {
 
 		size_t totalSize = sizeof(*this);
 		Dc(cout << endl << "this = " << sizeof(*this));
@@ -247,6 +248,12 @@ public:
 
 		return totalSize;
 	}
+
+	int size() {
+		return num_intervals;
+	}
+
+
 	long num_independent_sets() {
 		return independent_sets_number;
 	}

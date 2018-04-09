@@ -133,15 +133,19 @@ public:
 		}
 		size_t size()
 		{
-			size_t totalSize = sizeof(SpatialLeaf) + sizeof(Line) + sizeof(RTree<TemporalLeaf*, double, 1, float>);
+			size_t totalSize = sizeof(SpatialLeaf) + sizeof(Line);
 
-			RTree<TemporalLeaf*, double, 1, float>::Iterator it;
-			temporalTree->GetFirst(it);
-
-			while(! (temporalTree->IsNull(it)) )
+			if (temporalTree->Count() >= 5)
 			{
-				totalSize += (*it)->size();
-				temporalTree->GetNext(it);
+				totalSize += sizeof(RTree<TemporalLeaf*, double, 1, float>);
+				RTree<TemporalLeaf*, double, 1, float>::Iterator it;
+				temporalTree->GetFirst(it);
+
+				while(! (temporalTree->IsNull(it)) )
+				{
+					totalSize += (*it)->size();
+					temporalTree->GetNext(it);
+				}
 			}
 
 			return totalSize;
