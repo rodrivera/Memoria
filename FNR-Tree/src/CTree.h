@@ -102,13 +102,12 @@ public:
 					//cout << " >* BEGIN BUILD!! with " << intervals.size() << " ... ";
 			if(!built)
 			{
-				//temporalTree = new Stabbing(intervals,100,10000000); // 10^7
-				temporalTree = new Stabbing(intervals,100,100000);
+				temporalTree = new Stabbing(intervals,100,10000000); // 10^7
 			}
 			built = true;
 			num_intervals = intervals.size();
 			intervals.clear();
-				
+
 					//cout << " >* END BUILD!!" << endl;
 		}
 		size_t size()
